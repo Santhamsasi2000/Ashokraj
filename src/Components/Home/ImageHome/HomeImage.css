@@ -30,13 +30,13 @@
 
 .btn-color
 {
-    background-color: #fcf8ea;
+    background-color: #fbfaf1;
     border:none;
 }
 
 .btn-color:hover
 {
-   background-color: #f9f0c8;
+   background-color: #eae1be;
    transition: 0.5s;
 }
 
@@ -44,4 +44,6 @@
 {
    text-transform: uppercase;
    transition: 0.5s;
+   background-color: #eae1be;
+   font-weight: bold;
 }

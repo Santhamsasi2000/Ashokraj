@@ -1,4 +1,4 @@
-import { IoMdCall } from "react-icons/io";
+import { SlCallOut } from "react-icons/sl";
 
 const callData = [
   {
@@ -30,7 +30,7 @@ const FooterContact = () => {
         callData.map(({id, forWhich, number})=>(
           <div className="d-flex align-items-center mb-3 footer-contact" key={id}>
             <p className="fw-semibold mb-0">{forWhich} <span className="line me-1">-</span></p>
-            <i className="fs-5"><IoMdCall /></i>
+            <i className="fs-5"><SlCallOut /></i>
             <a href={`tel:${number}`} className="footer-Links ms-1 text-decoration-none">{number}</a>
          </div>
         ))

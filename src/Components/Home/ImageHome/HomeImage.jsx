@@ -10,13 +10,15 @@ const HomeImage = () => {
         <div className='row justify-content-center gap-5'>
           {
             DataImage.map(({id,image,title,link,btnTitle})=>(
-            <div className='col-md-5 border border-img border-4 p-0' key={id}>
-              <LazyLoadImage src={image} alt={title} effect="blur" className='w-100'/>
-              <div className='d-flex justify-content-between align-items-center bg-img p-2'>
-                <p className='text-white fw-bold fs-5 mb-0'>{title}</p>
-                <NavLink to={link} className="btn btn-color">{btnTitle}</NavLink>
-              </div>
+             <div className='col-md-5'>
+                <div className='card border border-img border-4 p-0 h-100 bg-img' key={id}>
+                <LazyLoadImage src={image} alt={title} effect="blur" threshold={200} className='w-100'/>
+                <div className='d-flex justify-content-between align-items-center bg-img p-2'>
+                  <p className='text-white fw-bold fs-5 mb-0'>{title}</p>
+                  <NavLink to={link} className="btn btn-color">{btnTitle}</NavLink>
+                </div>
             </div>
+             </div>
             ))
           }
         </div>
